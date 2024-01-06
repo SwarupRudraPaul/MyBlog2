@@ -1,19 +1,14 @@
-package com.myBlog2.MyBlog2.entity;
+package com.myBlog2.MyBlog2.payload;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
-@Table(name = "post")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class PostEntity {
+public class PostDto {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String title;
     private String description;
